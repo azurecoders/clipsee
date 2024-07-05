@@ -56,7 +56,7 @@ const AboutPage = () => {
           </p>
           <div className="text-center mb-8">
             <FaCheckCircle className="text-green-500 text-5xl mx-auto mb-4" />
-            <p className="text-lg">ISO Certified</p>
+            <p className="text-lg">Trademark Registered</p>
           </div>
         </div>
       </section>
