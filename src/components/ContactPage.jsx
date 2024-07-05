@@ -25,7 +25,7 @@ const ContactPage = () => {
               <FaMapMarkerAlt className="text-indigo-600 text-4xl mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Address</h3>
               <p className="text-gray-700">
-                B508 2nd Floor Opt Younus Masjid Ahsanabad
+                B508 2nd Floor Opt Younus Masjid Ahsanabad, Karachi
               </p>
             </div>
             <div className="text-center">
