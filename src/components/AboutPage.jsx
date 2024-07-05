@@ -5,6 +5,7 @@ import sheeraz from "../assets/sheeraz.jpg";
 import hussnain from "../assets/hussnain.jpg";
 import zohaib from "../assets/zohaib.jpg";
 import plant from "../assets/plant.jpg";
+import { Link } from "react-router-dom";
 
 const employeeData = [
   {
@@ -147,12 +148,12 @@ const AboutPage = () => {
           <p className="text-lg mb-8">
             Have any questions or concerns? We're always ready to help!
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg hover:bg-indigo-700"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
 
