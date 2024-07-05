@@ -142,7 +142,7 @@ const HomePage = () => {
             <FaTwitter className="text-2xl hover:text-white" />
             <FaInstagram className="text-2xl hover:text-white" />
           </div>
-          <p>&copy; {new Date().getFullYear()} Salanty. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Clipsee. All rights reserved.</p>
         </div>
       </footer>
     </div>
