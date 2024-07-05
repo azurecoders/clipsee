@@ -4,7 +4,9 @@ import owner from "../assets/owner.jpg";
 import sheeraz from "../assets/sheeraz.jpg";
 import hussnain from "../assets/hussnain.jpg";
 import zohaib from "../assets/zohaib.jpg";
-import plant from "../assets/plant.jpg";
+import sampleImage1 from "../assets/plant.jpg";
+import sampleImage2 from "../assets/production.jpg";
+import sampleImage3 from "../assets/cotton.jpg";
 import { Link } from "react-router-dom";
 
 const employeeData = [
@@ -21,7 +23,7 @@ const employeeData = [
   },
   {
     name: "Sheeraz Khan",
-    position: "Nation Sales Manager",
+    position: "National Sales Manager",
     image: sheeraz,
   },
 ];
@@ -44,16 +46,41 @@ const AboutPage = () => {
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Our Company</h2>
-          <img
-            src={plant}
-            alt="Company"
-            className="w-full h-[400px] mb-8 object-cover object-center rounded-lg shadow-lg"
-          />
-          <p className="text-lg mb-8">
-            Clipsee is a leading company in the industry, dedicated to providing
-            top-notch products and services. Our commitment to innovation,
-            quality, and customer satisfaction sets us apart.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <img
+                src={sampleImage1}
+                alt="Company Overview 1"
+                className="w-full h-[300px] mb-8 object-cover object-center rounded-lg shadow-lg"
+              />
+              <p className="text-lg mb-8">
+                Clipsee is a leading company in the industry, dedicated to
+                providing top-notch products and services.
+              </p>
+            </div>
+            <div>
+              <img
+                src={sampleImage2}
+                alt="Company Overview 2"
+                className="w-full h-[300px] mb-8 object-cover object-center rounded-lg shadow-lg"
+              />
+              <p className="text-lg mb-8">
+                Our commitment to innovation, quality, and customer satisfaction
+                sets us apart.
+              </p>
+            </div>
+            <div>
+              <img
+                src={sampleImage3}
+                alt="Company Overview 3"
+                className="w-full h-[300px] mb-8 object-cover object-center rounded-lg shadow-lg"
+              />
+              <p className="text-lg mb-8">
+                We continuously strive to improve and innovate, ensuring our
+                customers receive the best products and services.
+              </p>
+            </div>
+          </div>
           <div className="text-center mb-8">
             <FaCheckCircle className="text-green-500 text-5xl mx-auto mb-4" />
             <p className="text-lg">Trademark Registered</p>
