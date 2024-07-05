@@ -18,7 +18,7 @@ import flavour11 from "../assets/flavour11.jpg";
 import flavour12 from "../assets/flavour12.jpg";
 
 const sampleImages = [
-  { name: "Ringo", image: flavour1 },
+  { name: "Chicken Salt", image: flavour1 },
   { name: "Bar.B.Q", image: flavour2 },
   { name: "Tomato & Chilli", image: flavour3 },
   { name: "Chatpatta", image: flavour4 },
