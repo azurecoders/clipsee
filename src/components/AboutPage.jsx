@@ -106,7 +106,7 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-center mb-12">
             Remarkable Employees
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-content-center">
             {employeeData.map((employee, index) => (
               <div
                 key={index}
