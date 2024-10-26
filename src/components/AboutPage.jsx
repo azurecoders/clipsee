@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import owner from "../assets/owner.jpg";
-import sheeraz from "../assets/sheeraz.jpg";
 import hussnain from "../assets/hussnain.jpg";
 import zohaib from "../assets/zohaib.jpg";
 import sampleImage1 from "../assets/plant.jpg";
@@ -20,12 +19,7 @@ const employeeData = [
     name: "Muhammed Zohaib",
     position: "GM (Production/Sales)",
     image: zohaib,
-  },
-  {
-    name: "Sheeraz Khan",
-    position: "National Sales Manager",
-    image: sheeraz,
-  },
+  }
 ];
 
 const AboutPage = () => {
