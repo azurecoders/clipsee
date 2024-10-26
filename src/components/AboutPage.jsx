@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import owner from "../assets/owner.jpg";
 import hussnain from "../assets/hussnain.jpg";
 import zohaib from "../assets/zohaib.jpg";
@@ -14,7 +14,6 @@ const employeeData = [
     position: "Chief Financial Analyst (CFA)",
     image: hussnain,
   },
-
   {
     name: "Muhammed Zohaib",
     position: "GM (Production/Sales)",
@@ -25,7 +24,6 @@ const employeeData = [
 const AboutPage = () => {
   return (
     <div>
-      {/* Hero Section */}
       <section className="bg-indigo-600 text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">About Clipsee</h1>
@@ -36,7 +34,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Company Overview Section */}
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Our Company</h2>
@@ -82,14 +79,13 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Owner Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Meet the Owner</h2>
           <img
             src={owner}
             alt="Sajid Rashid Khan"
-            className="w-40 h-40 rounded-full mx-auto mb-4"
+            className="w-40 h-40 rounded-full mx-auto mb-4 object-cover shadow-lg"
           />
           <h3 className="text-2xl font-semibold mb-2">Sajid Rashid Khan</h3>
           <p className="text-lg mb-8">
@@ -100,32 +96,48 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Remarkable Employees Section */}
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             Remarkable Employees
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-content-center">
-            {employeeData.map((employee, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg p-6 text-center"
-              >
-                <img
-                  src={employee.image}
-                  alt={employee.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover object-top"
-                />
-                <h3 className="text-2xl font-semibold mb-2">{employee.name}</h3>
-                <p className="text-gray-700">{employee.position}</p>
-              </div>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
+              {employeeData.map((employee, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl shadow-xl p-8 text-center w-full max-w-sm transform transition-transform duration-300 hover:scale-105"
+                >
+                  <div className="relative mb-6">
+                    <div className="w-40 h-40 mx-auto">
+                      <img
+                        src={employee.image}
+                        alt={employee.name}
+                        className="w-full h-full rounded-full object-cover object-top ring-4 ring-indigo-100"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800">
+                    {employee.name}
+                  </h3>
+                  <p className="text-indigo-600 font-medium mb-4">
+                    {employee.position}
+                  </p>
+                  <div className="flex justify-center space-x-4 text-gray-600">
+                    <button className="p-2 hover:text-indigo-600 transition-colors">
+                      <FaLinkedin size={24} />
+                    </button>
+                    <button className="p-2 hover:text-indigo-600 transition-colors">
+                      <FaEnvelope size={24} />
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Our Values Section */}
       <section className="relative py-20 bg-white">
         <div className="absolute inset-0 flex justify-center items-center space-x-4 opacity-5">
           <div className="bg-indigo-100 w-1/4 h-64 rounded-lg transform rotate-6"></div>
@@ -162,7 +174,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Contact Us</h2>
@@ -178,7 +189,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="container mx-auto px-6 text-center">
           <p>&copy; {new Date().getFullYear()} Clipsee. All rights reserved.</p>
