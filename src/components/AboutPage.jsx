@@ -123,14 +123,6 @@ const AboutPage = () => {
                   <p className="text-indigo-600 font-medium mb-4">
                     {employee.position}
                   </p>
-                  <div className="flex justify-center space-x-4 text-gray-600">
-                    <button className="p-2 hover:text-indigo-600 transition-colors">
-                      <FaLinkedin size={24} />
-                    </button>
-                    <button className="p-2 hover:text-indigo-600 transition-colors">
-                      <FaEnvelope size={24} />
-                    </button>
-                  </div>
                 </div>
               ))}
             </div>
